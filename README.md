@@ -74,7 +74,7 @@ A common use case for this is styling dependent on the `js` ("JavaScript enabled
             position: relative;
         }
 
-### To test print styles
+### Testing print styles
 
         // browser console
         $('html').addClass('at-print')
