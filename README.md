@@ -41,7 +41,7 @@ Ensure that the mixin is available to your project:
                 display: none;
             }
         }
-        
+
 ##### Compiled CSS
 
         @media print {
@@ -49,11 +49,11 @@ Ensure that the mixin is available to your project:
                 display: none;
             }
         }
-        
+
         .at-print .element {
             display: none;
         }
-        
+
 #### Style a selector that includes the `html` element:
 
 A common use case for this is styling dependent on the `js` ("JavaScript enabled") state which is applied to the `html` element via JavaScript.
@@ -84,4 +84,4 @@ A common use case for this is styling dependent on the `js` ("JavaScript enabled
 
         // browser console
         $('html').addClass('at-print')
-  
+

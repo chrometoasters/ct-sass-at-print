@@ -1,0 +1,19 @@
+@mixin at-print {
+    @media print {
+        @content;
+    }
+
+    .at-print & { // for debugging
+        @content;
+    }
+}
+
+@mixin at-print-root {
+    @media print {
+        @content;
+    }
+
+    &.at-print { // for debugging
+        @content;
+    }
+}
