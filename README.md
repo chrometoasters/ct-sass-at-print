@@ -50,9 +50,11 @@ Note: if you wish to customise where Bower puts installed components, you may ad
         
 #### Style a selector that includes the `html` element:
 
+A common use case for this is styling dependent on the `js` ("JavaScript enabled") state which is applied to the `html` element via JavaScript.
+
 ##### SCSS
 
-        .js { // (html.js)
+        .js {
             @include at-print-root {
                 .m-module {
                     position: relative;
