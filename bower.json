@@ -1,0 +1,23 @@
+{
+  "name": "ct-sass-at-print",
+  "description": "A wrapper for @media print which supports in-browser testing. ",
+  "version": "1.0.0",
+  "main": "dist",
+  "license": "All rights reserved",
+  "ignore": [],
+  "keywords": [],
+  "authors": [
+    {
+      "name": "Dan Smith",
+      "email": "dan.smith@chrometoaster.com"
+    }
+  ],
+  "homepage": "http://github.com/chrometoasters/ct-sass-at-print",
+  "repository": {
+    "type": "github",
+    "url": "http://github.com/chrometoasters/ct-sass-at-print.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "private": true
+}
