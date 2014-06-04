@@ -5,7 +5,7 @@ A wrapper for `@media print` which supports in-browser testing.
 
 ---
 
-Several developer toolbars allow print styles to be tested by toggling on `@media print`, but the implementation only appears to include stylesheets linked with `media="print"`, excluding any `@media print` blocks in other stylesheets.
+Several developer toolbars allow print styles to be tested by toggling on `@media print`, but the implementation appears limited to stylesheets linked with `media="print"` - excluding any `@media print` blocks in other stylesheets.
 
 This mixin allows print styles to be authored within a module or screen stylesheet, passed to the browser at print time via `@media print`, and tested during development by toggling a class of `at-print` on the root element.
 
