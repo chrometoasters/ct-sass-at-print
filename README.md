@@ -22,12 +22,12 @@ This mixin allows print styles to be authored within a module or screen styleshe
 
 In this way print styles authored outside of the print stylesheet can be tested in the browser.
 
-  // console
-  $('html').addClass('at-print')
+        // console
+        $('html').addClass('at-print')
   
 ### Dependencies
 
 Ensure that the mixin is available to your project:
 
-  @import "ct-sass-at-print/dist/ct-sass-at-print`;
+        @import "ct-sass-at-print/dist/ct-sass-at-print`;
 
