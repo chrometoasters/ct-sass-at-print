@@ -3,6 +3,14 @@ ct-sass-at-print
 
 A wrapper for `@media print` which supports in-browser testing.
 
+---
+
+Several developer toolbars allow print styles to be tested by toggling on `@media print`, but the implementation only appears to include stylesheets linked with `media="print"`, excluding any `@media print` blocks in other stylesheets.
+
+This mixin allows print styles to be authored within a module or screen stylesheet, passed to the browser at print time via `@media print`, and tested during development by toggling a class of `at-print` on the root element.
+
+In this way print styles authored outside of the print stylesheet can be tested in the browser.
+
 ## Installation
 
 1. In Terminal: `cd /PATH/TO/PROJECT-THEME-FOLDER`
@@ -16,11 +24,55 @@ Note: if you wish to customise where Bower puts installed components, you may ad
 
 ## Usage
 
-Several developer toolbars allow print styles to be tested by toggling on `@media print`, but the implementation only appears to include stylesheets linked with `media="print"`, excluding any `@media print` blocks in other stylesheets.
+### Authoring print styles
 
-This mixin allows print styles to be authored within a module or screen stylesheet, passed to the browser at print time via `@media print`, and tested during development by toggling a class of `at-print` on the root element.
+#### Style a selector that excludes the `html` element:
 
-In this way print styles authored outside of the print stylesheet can be tested in the browser.
+##### SCSS
+
+        .element {
+            @include at-print {
+                display: none;
+            }
+        }
+        
+##### CSS
+
+        @media print {
+            .element {
+                display: none;
+            }
+        }
+        
+        .at-print .element {
+            display: none;
+        }
+        
+#### Style a selector that includes the `html` element:
+
+##### SCSS
+
+        .js {
+            @include at-print-root {
+                .m-module {
+                    position: relative;
+                }
+            }
+        }
+
+##### CSS
+
+        @media print {
+            .js .m-module {
+                position: relative;
+            }
+        }
+
+        .js.at-print .m-module {
+            position: relative;
+        }
+
+### To test print styles
 
         // browser console
         $('html').addClass('at-print')
