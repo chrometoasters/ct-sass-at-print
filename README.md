@@ -24,6 +24,12 @@ Note: if you wish to customise where Bower puts installed components, you may ad
 
 ## Usage
 
+### Dependencies
+
+Ensure that the mixin is available to your project:
+
+        @import "ct-sass-at-print/dist/ct-sass-at-print`;
+
 ### Authoring print styles
 
 #### Style a selector that excludes the `html` element:
@@ -79,9 +85,3 @@ A common use case for this is styling dependent on the `js` ("JavaScript enabled
         // browser console
         $('html').addClass('at-print')
   
-### Dependencies
-
-Ensure that the mixin is available to your project:
-
-        @import "ct-sass-at-print/dist/ct-sass-at-print`;
-
