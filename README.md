@@ -36,7 +36,7 @@ Note: if you wish to customise where Bower puts installed components, you may ad
             }
         }
         
-##### CSS
+##### Compiled CSS
 
         @media print {
             .element {
@@ -60,7 +60,7 @@ Note: if you wish to customise where Bower puts installed components, you may ad
             }
         }
 
-##### CSS
+##### Compiled CSS
 
         @media print {
             .js .m-module {
