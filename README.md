@@ -22,7 +22,7 @@ This mixin allows print styles to be authored within a module or screen styleshe
 
 In this way print styles authored outside of the print stylesheet can be tested in the browser.
 
-        // console
+        // browser console
         $('html').addClass('at-print')
   
 ### Dependencies
