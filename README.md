@@ -52,7 +52,7 @@ Note: if you wish to customise where Bower puts installed components, you may ad
 
 ##### SCSS
 
-        .js {
+        .js { // (html.js)
             @include at-print-root {
                 .m-module {
                     position: relative;
