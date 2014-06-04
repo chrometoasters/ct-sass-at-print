@@ -28,7 +28,7 @@ Note: if you wish to customise where Bower puts installed components, you may ad
 
 Ensure that the mixin is available to your project:
 
-        @import "ct-sass-at-print/dist/ct-sass-at-print`;
+        @import "ct-sass-at-print/dist/ct-sass-at-print";
 
 ### Authoring print styles
 
